@@ -3,3 +3,6 @@ pandas
 numpy
 matplotlib
 ipykernel
+PyYAML
+streamlit
+-e .
