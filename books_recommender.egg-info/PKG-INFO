@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: books_recommender
+Version: 0.0.1
+Summary: A book recommender system using collaborative filtering and Streamlit
+Home-page: https:github.com/sameer-at-git/Book-Recommender-System-using-Collaborative-Filtering-and-Streamlit
+Author: sameer-at-git
+Author-email: mdsameersayed0@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
