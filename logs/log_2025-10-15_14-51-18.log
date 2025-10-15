@@ -1,0 +1,23 @@
+[2025-10-15 14:51:18,760] INFO - ==================== Data Ingestion log started. ====================
+[2025-10-15 14:51:18,761] INFO - Data Ingestion config:DataIngestionConfig(dataset_download_url='https://github.com/sameer-at-git/others/raw/main/data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_data_dir='artifacts\\dataset\\ingested_data')
+[2025-10-15 14:51:18,761] INFO - ==================== Data Validation log started. ====================
+[2025-10-15 14:51:18,762] INFO - Data Validation config:DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2025-10-15 14:51:18,763] INFO - Data downloading from https://github.com/sameer-at-git/others/raw/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 14:51:26,895] INFO - Data downloaded from https://github.com/sameer-at-git/others/raw/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 14:51:26,895] INFO - Extracting zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
+[2025-10-15 14:51:27,378] INFO - Extracted zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
+[2025-10-15 14:51:27,379] INFO - ==================== Data Ingestion log completed. ====================
+
+
+[2025-10-15 14:51:27,379] INFO - ==================== Data Validation log started. ====================
+
+
+[2025-10-15 14:51:29,180] INFO - Read books and ratings data successfully
+[2025-10-15 14:51:29,180] INFO - Shape of ratings Data file: (1149780, 3) 
+[2025-10-15 14:51:29,180] INFO - Shape of books data file: (271360, 8)
+[2025-10-15 14:51:30,731] INFO - Shape of final Cleaned data: (59850, 9)
+[2025-10-15 14:51:30,939] INFO - Cleaned data saved at location: artifacts\dataset\clean_data
+[2025-10-15 14:51:30,958] INFO - Final rating data serialized at location: artifacts\serialized_objects
+[2025-10-15 14:51:31,028] INFO - ==================== Data Validation log completed. ====================
+
+

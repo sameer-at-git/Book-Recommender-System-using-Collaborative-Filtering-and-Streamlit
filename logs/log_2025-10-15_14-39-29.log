@@ -1,0 +1,14 @@
+[2025-10-15 14:39:29,800] INFO - ==================== Data Ingestion log started. ====================
+[2025-10-15 14:39:29,801] INFO - Data Ingestion config:DataIngestionConfig(dataset_download_url='https://github.com/sameer-at-git/others/raw/main/data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_data_dir='artifacts\\dataset\\ingested_data')
+[2025-10-15 14:39:29,801] INFO - ==================== Data Validation log started. ====================
+[2025-10-15 14:39:29,802] INFO - Data Validation config:DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2025-10-15 14:39:29,813] INFO - Data downloading from https://github.com/sameer-at-git/others/raw/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 14:39:38,760] INFO - Data downloaded from https://github.com/sameer-at-git/others/raw/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 14:39:38,760] INFO - Extracting zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
+[2025-10-15 14:39:39,231] INFO - Extracted zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
+[2025-10-15 14:39:39,231] INFO - ==================== Data Ingestion log completed. ====================
+
+
+[2025-10-15 14:39:39,231] INFO - ==================== Data Validation log started. ====================
+
+

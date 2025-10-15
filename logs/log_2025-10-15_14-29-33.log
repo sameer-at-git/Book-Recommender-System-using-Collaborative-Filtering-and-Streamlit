@@ -1,0 +1,3 @@
+[2025-10-15 14:29:35,978] INFO - ==================== Data Ingestion log started. ====================
+[2025-10-15 14:29:35,979] INFO - Data Ingestion config:DataIngestionConfig(dataset_download_url='https://github.com/sameer-at-git/others/raw/main/data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_data_dir='artifacts\\dataset\\ingested_data')
+[2025-10-15 14:29:35,979] INFO - ==================== Data Validation log started. ====================
