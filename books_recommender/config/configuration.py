@@ -13,7 +13,7 @@ class AppConfiguration:
             self.configs_info = read_yaml_file(file_path=config_file_path)
         except Exception as e:
             raise AppException(e,sys) from e 
-
+ 
     def get_data_ingestion_config(self)-> DataIngestionConfig:
         try:
             data_ingestion_config = self.configs_info['data_ingestion_config']

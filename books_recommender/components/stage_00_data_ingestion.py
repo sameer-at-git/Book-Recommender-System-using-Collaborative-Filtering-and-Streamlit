@@ -1,15 +1,18 @@
 import os
 import sys
-from six.moves import urllib
+import urllib.request
 import  zipfile
 from books_recommender.logger.log import logging
 from books_recommender.exception.exception_handler import AppException
 from books_recommender.config.configuration import AppConfiguration
 
 class DataIngestion:
-    def __init__(self, app_config: AppConfiguration) -> None:
+    def __init__(self, app_config=None)-> None:
         try:
             logging.info(f"{'='*20} Data Ingestion log started. {'='*20}")
+            if app_config is None:
+                app_config = AppConfiguration()
+            self.app_config = app_config    
             self.data_ingestion_config = app_config.get_data_ingestion_config()
         except Exception as e:
             raise AppException(e, sys) from e
@@ -30,7 +33,7 @@ class DataIngestion:
         
     def extract_zip_file(self, zip_file_path: str) -> None:
         try:
-            ingested_dir = self.data_ingestion_config.ingested_dir
+            ingested_dir = self.data_ingestion_config.ingested_data_dir
             os.makedirs(ingested_dir, exist_ok=True)
             logging.info(f"Extracting zip file: {zip_file_path} to dir: {ingested_dir}")
             with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:

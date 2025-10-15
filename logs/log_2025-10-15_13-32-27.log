@@ -1,0 +1,5 @@
+[2025-10-15 13:32:27,703] INFO - ==================== Data Ingestion log started. ====================
+[2025-10-15 13:32:27,704] INFO - Data Ingestion config:DataIngestionConfig(dataset_download_url='https://github.com/sameer-at-git/others/blob/main/data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_data_dir='artifacts\\dataset\\ingested_data')
+[2025-10-15 13:32:27,704] INFO - Data downloading from https://github.com/sameer-at-git/others/blob/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 13:32:29,412] INFO - Data downloaded from https://github.com/sameer-at-git/others/blob/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 13:32:29,423] INFO - Extracting zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
