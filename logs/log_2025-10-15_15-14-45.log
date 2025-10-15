@@ -1,0 +1,33 @@
+[2025-10-15 15:14:46,119] INFO - ==================== Data Ingestion log started. ====================
+[2025-10-15 15:14:46,121] INFO - Data Ingestion config:DataIngestionConfig(dataset_download_url='https://github.com/sameer-at-git/others/raw/main/data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_data_dir='artifacts\\dataset\\ingested_data')
+[2025-10-15 15:14:46,121] INFO - ==================== Data Validation log started. ====================
+[2025-10-15 15:14:46,122] INFO - Data Validation config:DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2025-10-15 15:14:46,122] INFO - ==================== Data Transformation log : ====================
+[2025-10-15 15:14:46,123] INFO - Data Transformation config:DataTransformationConfig(clean_data_file_path='artifacts\\dataset\\clean_data\\clean_data.csv', transformed_data_dir='artifacts\\dataset\\transformed_data')
+[2025-10-15 15:14:46,123] INFO - Data Validation config:DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2025-10-15 15:14:46,123] INFO - Data downloading from https://github.com/sameer-at-git/others/raw/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 15:14:52,426] INFO - Data downloaded from https://github.com/sameer-at-git/others/raw/main/data.zip successfully and saved to artifacts\dataset\raw_data\data.zip
+[2025-10-15 15:14:52,426] INFO - Extracting zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
+[2025-10-15 15:14:52,870] INFO - Extracted zip file: artifacts\dataset\raw_data\data.zip to dir: artifacts\dataset\ingested_data
+[2025-10-15 15:14:52,870] INFO - ==================== Data Ingestion log completed. ====================
+
+
+[2025-10-15 15:14:52,870] INFO - ==================== Data Validation log started. ====================
+
+
+[2025-10-15 15:14:54,292] INFO - Read books and ratings data successfully
+[2025-10-15 15:14:54,292] INFO - Shape of ratings Data file: (1149780, 3) 
+[2025-10-15 15:14:54,292] INFO - Shape of books data file: (271360, 8)
+[2025-10-15 15:14:55,490] INFO - Shape of final Cleaned data: (59850, 9)
+[2025-10-15 15:14:55,706] INFO - Cleaned data saved at location: artifacts\dataset\clean_data
+[2025-10-15 15:14:55,737] INFO - Final rating data serialized at location: artifacts\serialized_objects
+[2025-10-15 15:14:55,834] INFO - ==================== Data Validation log completed. ====================
+
+
+[2025-10-15 15:14:55,834] INFO - ====================Data Transformation log started.==================== 
+[2025-10-15 15:14:56,003] INFO - Saved pivot table data to artifacts\dataset\transformed_data
+[2025-10-15 15:14:56,004] INFO - Saved book names serialization object to artifacts\serialized_objects
+[2025-10-15 15:14:56,008] INFO - Saved book pivot serialization object to artifacts\serialized_objects
+[2025-10-15 15:14:56,009] INFO - ====================Data Transformation log completed.==================== 
+
+
